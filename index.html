@@ -16,18 +16,18 @@
       <!-- Left Menu Start -->
       <div class="menu">
         <ul>
-          <li><a href="#">资源篇</a></li>
-          <li><a href="#">图片篇</a></li>
-          <li><a href="#">博客篇</a></li>
-          <li><a href="#">学习篇</a></li>
-          <li><a href="#">社区篇</a></li>
-          <li><a href="#">求职篇</a></li>
+          <li><a href="javascript:;" class="source">资源篇</a></li>
+          <li><a href="javascript:;" class="picture">图片篇</a></li>
+          <li><a href="javascript:;" class="blog">博客篇</a></li>
+          <li><a href="javascript:;" class="study">学习篇</a></li>
+          <li><a href="javascript:;" class="community">社区篇</a></li>
+          <li><a href="javascript:;" class="job">求职篇</a></li>
         </ul>
       </div>
       <!-- Left Menu End -->
       <!-- Rright Content Start -->
       <div class="right-content">
-        <h3>资源篇</h3>
+        <h3 id="source">资源篇</h3>
         <ul>
           <li><a href="http://www.gulpjs.com.cn/" target="_blank">Gulp中文网</a></li>
           <li><a href="https://www.gitbook.com/book/li-xinyang/frontend-notebook/details" target="_blank">前端开发笔记本</a></li>
@@ -35,7 +35,7 @@
           <li><a href="http://www.bootcss.com/" target="_blank">BootStrap中文网</a></li>
         </ul>
 
-        <h3>图片篇</h3>
+        <h3 id="picture">图片篇</h3>
         <ul>
           <li><a href="http://www.easyicon.net/" target="_blank">easyicon</a></li>
           <li><a href="http://fontawesome.com.cn/" target="_blank">Font Awesome</a></li>
@@ -43,7 +43,7 @@
           <li><a href="https://www.sitebuilderreport.com/stock-up" target="_blank">Stock Up</a></li>
         </ul>
 
-        <h3>博客篇</h3>
+        <h3 id="blog">博客篇</h3>
         <ul>
           <li><a href="http://www.zhangxinxu.com/" target="_blank">张鑫旭</a></li>
           <li><a href="http://www.barretlee.com/" target="_blank">小胡子哥</a></li>
@@ -57,20 +57,20 @@
           <li><a href="http://xiao-jing.github.io/" target="_blank">静子</a></li>
         </ul>
 
-        <h3>学习篇</h3>
+        <h3 id="study">学习篇</h3>
         <ul>
           <li><a href="http://www.imooc.com/" target="_blank">慕课网</a></li>
           <li><a href="http://www.uisdc.com/" target="_blank">优设网</a></li>
         </ul>
 
-        <h3>社区篇</h3>
+        <h3 id="community">社区篇</h3>
         <ul>
           <li><a href="http://www.tuicool.com/" target="_blank">推酷</a></li>
           <li><a href="https://segmentfault.com/" target="_blank">segmentfault</a></li>
           <li><a href="http://www.v2ex.com/" target="_blank">V2EX</a></li>
         </ul>
 
-        <h3>求职篇</h3>
+        <h3 id="job">求职篇</h3>
         <ul>
           <li><a href="http://www.lagou.com/" target="_blank">拉勾网</a></li>
           <li><a href="http://www.shixiseng.com/" target="_blank">实习僧</a></li>
@@ -78,6 +78,37 @@
       </div>
       <!-- Rright Content End -->
     </div>
+    <!-- Footer Information Start -->
+    <div class="footer">
+      Made By HaoEryou
+    </div>
+    <!-- Footer Information End -->
   </div>
+
+  <script type="text/javascript" src="http://jt.875.cn/js/jquery.js"></script>
+  <script type="text/javascript" src="http://jt.875.cn/js/scrollto.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $(".source").click(function(){
+      $.scrollTo('#source',500);
+    });
+    $(".picture").click(function(){
+      $.scrollTo('#picture',500);
+    });
+    $(".blog").click(function(){
+      $.scrollTo('#blog',500);
+    });
+    $(".study").click(function(){
+      $.scrollTo('#study',500);
+    });
+    $(".community").click(function(){
+      $.scrollTo('#community',500);
+    });
+    $(".job").click(function(){
+      $.scrollTo('#job',500);
+    });
+  });
+  </script>
+
 </body>
 </html>
